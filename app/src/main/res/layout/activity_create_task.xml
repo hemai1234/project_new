@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".create_task">
+
+    <ImageView
+        android:id="@+id/imgcross"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/cross"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/txtcreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREATE TASK"
+        android:fontFamily="@font/portlligatsans_regular"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="#000000"/>
+
+    <ImageView
+        android:id="@+id/imglogocreate"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@mipmap/logo"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/txtnmtask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task Name"
+        android:textSize="25dp"
+        android:fontFamily="@font/portlligatsans_regular"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/imglogocreate"
+        android:textColor="#000000"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtedittask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtnmtask"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#FFFF"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:theme="@style/AppTheme.golden"
+        app:boxBackgroundMode="none">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:hint="Enter task name.."
+            android:paddingStart="25dp"
+            android:textColor="#CECECE"
+            android:fontFamily="@font/portlligatsans_regular"
+            android:background="@drawable/edittext_round"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/txtdue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Due Date"
+        android:textSize="25dp"
+        android:fontFamily="@font/portlligatsans_regular"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/txtedittask"
+        android:textColor="#000000"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txteditdue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtdue"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#FFFF"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:theme="@style/AppTheme.golden"
+        app:boxBackgroundMode="none">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:hint="Select dul date.."
+            android:paddingStart="25dp"
+            android:textColor="#CECECE"
+            android:drawableRight="@mipmap/calender"
+            android:paddingEnd="20dp"
+            android:fontFamily="@font/portlligatsans_regular"
+            android:background="@drawable/edittext_round"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/create"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:theme="@style/AppTheme.golden"
+        android:text="create"
+        android:textSize="15dp"
+        android:fontFamily="@font/portlligatsans_regular"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="130dp"
+        android:background="@drawable/edittext_round"
+        android:layout_below="@id/txteditdue"/>
+
+</RelativeLayout>

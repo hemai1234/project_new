@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_income">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgcross2"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/cross"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/txtincome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD INCOME"
+            android:fontFamily="@font/portlligatsans_regular"
+            android:textSize="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/imglogoincome"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@mipmap/logo"
+            android:layout_marginTop="80dp"/>
+
+        <TextView
+            android:id="@+id/txtnmincome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="25dp"
+            android:fontFamily="@font/portlligatsans_regular"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@id/imglogoincome"
+            android:textColor="#000000"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txteditnmincome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtnmincome"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#FFFF"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:theme="@style/AppTheme.golden"
+            app:boxBackgroundMode="none">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:hint="Enter name.."
+                android:paddingStart="25dp"
+                android:textColor="#CECECE"
+                android:fontFamily="@font/portlligatsans_regular"
+                android:background="@drawable/edittext_round"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/txtflatno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Flat No"
+            android:textSize="25dp"
+            android:fontFamily="@font/portlligatsans_regular"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@id/txteditnmincome"
+            android:textColor="#000000"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txteditflat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtflatno"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#FFFF"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:theme="@style/AppTheme.golden"
+            app:boxBackgroundMode="none">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:hint="Enter flat no.."
+                android:paddingStart="25dp"
+                android:textColor="#CECECE"
+                android:paddingEnd="20dp"
+                android:fontFamily="@font/portlligatsans_regular"
+                android:background="@drawable/edittext_round"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Flat No"
+            android:textSize="25dp"
+            android:fontFamily="@font/portlligatsans_regular"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@id/txteditnmincome"
+            android:textColor="#000000"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txteditflat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtflatno"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#FFFF"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:theme="@style/AppTheme.golden"
+            app:boxBackgroundMode="none">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:hint="Enter flat no.."
+                android:paddingStart="25dp"
+                android:textColor="#CECECE"
+                android:paddingEnd="20dp"
+                android:fontFamily="@font/portlligatsans_regular"
+                android:background="@drawable/edittext_round"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/submitvolunteer"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:theme="@style/AppTheme.golden"
+            android:text="submit"
+            android:textSize="15dp"
+            android:fontFamily="@font/portlligatsans_regular"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/edittext_round"
+            android:layout_below="@id/txteditflat"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
